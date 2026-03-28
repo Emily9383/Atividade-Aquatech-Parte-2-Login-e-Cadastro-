@@ -1,0 +1,210 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+* {
+    margin: 0; 
+    padding: 0;          /* Remove espaços padrão do navegador */
+    box-sizing: border-box;         /* Garante que Padding não aumente o tamanho real da div */
+    font-family: 'Arial', sans-serif;
+    
+}
+
+/* --- CABEÇALHO (HEADER) --- */
+.header {
+    background-color: #120036;         /* Fundo */
+    border-bottom: 3px solid #000000; /* Linha */
+    padding: 15px 0;                /* Espaçamento interno em cima e embaixo */
+}
+
+.header .container {
+    display: flex;                  /* Coloca Título e Navbar lado a lado */
+    justify-content: space-between; /* Empurra o título pra esquerda e menu pra direita */
+    align-items: center;            /* Alinha os dois verticalmente ao centro */
+    width: 95%; 
+    margin: auto;       /* Centraliza o conteúdo no meio da tela */
+}
+
+.titulo {
+    color: #60c7ff;                 /* Azul para a marca */
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+
+/* --- MENU DE NAVEGAÇÃO --- */
+.navbar {
+    display: flex;                  /* Coloca os itens da lista (li) um ao lado do outro */
+    list-style: none;               /* Remove as "bolinhas" da lista */
+    font-size: 18px;
+}
+
+.navbar li { 
+    margin-left: 25px; /* Espaço entre os links do menu */
+}   
+
+.navbar a {
+    color: #ffffff; font-weight: 500;
+    transition: 0.3s;               /* Suaviza a mudança de cor no mouse (hover) */
+    
+}
+
+.navbar .agora a {
+    color: #8d5dff;               
+}
+
+/* --- BANNER PRINCIPAL --- */
+.banner {
+    background: url("imgbanner.png");
+    height: 450px;                  /* Altura fixa para o destaque */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: white; 
+    text-align: center;
+}
+
+.banner p { 
+    font-size: 36px; 
+}     
+
+.banner span {
+    color: #9c46ff; 
+    font-weight: bold; /* Destaque nas palavras "hoje" e "amanhã" */
+}
+
+/* --- SEÇÃO MISSÃO/VISÃO/VALORES --- */
+.social { 
+    padding: 60px 0;  /* Espaço para separar do banner e footer */
+    background-color: #dadada;
+}       
+
+.boxes {
+    display: flex;                  /* Alinha os 3 cards lado a lado */
+    justify-content: space-around;  /* Distribui espaço igual entre os cards */
+    width: 85%; 
+    margin: auto;
+}
+
+.box {
+    width: 30%;                     /* Cada card ocupa quase 1/3 da largura */
+    padding: 25px;
+    background: white;
+    border-radius: 15px;            /* Cantos arredondados modernos */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra suave para dar profundidade */
+    text-align: center;
+}
+
+
+
+/* Estilo do Ícone */
+.icon-banner {
+    width: 90px;               /* Tamanho do ícone */
+    height: auto;
+    opacity: 0.9;              /* Deixa levemente transparente para misturar ao banner */  
+}
+
+.icon_visao {
+    width: 90px;               /* Tamanho do ícone */
+    height: auto;
+    opacity: 0.9;              /* Deixa levemente transparente para misturar ao banner */ 
+}
+
+.icon_planeta{
+    width: 90px;               /* Tamanho do ícone */
+    height: auto;
+    opacity: 0.9;              /* Deixa levemente transparente para misturar ao banner */ 
+}
+
+.icon-banner, .icon_visao, .icon_planeta {
+    width: 90px;
+    height: auto;
+    opacity: 0.9;
+    display: block;        /* Garante que o ícone se comporte como um bloco para a margem funcionar */
+    margin: 0 auto 25px;   /* 0 em cima, auto nas laterais (centraliza) e 25px embaixo (separa do texto) */
+}
+
+.box h4 { 
+    color: #0077b6; 
+    margin-bottom: 15px; }
+
+
+.login {
+    background: url("imgbanner.png");     /* Fundo azul escuro para dar contraste ao card branco */
+    min-height: 80vh;              /* Altura mínima para cobrir a maior parte da tela */
+    display: flex;                 /* Flexbox para centralizar o card */
+    align-items: center;           /* Centraliza verticalmente */
+    justify-content: center;       /* Centraliza horizontalmente */
+    padding: 40px 0;
+}
+
+/* --- O CARD (CAIXA BRANCA) --- */
+.card {
+    background-color: white;       /* Fundo branco para destacar os campos */
+    width: 400px;                  /* Largura fixa para o formulário */
+    padding: 30px;                 /* Espaço interno */
+    border-radius: 15px;           /* Cantos arredondados */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Sombra para "flutuar" sobre o fundo */
+    text-align: center;            /* Centraliza o título "Bem-vindo" */
+}
+
+.card h2 {
+    color: #0077b6;                /* Título no azul padrão da marca */
+    margin-bottom: 25px;
+}
+
+/* --- CAMPOS DO FORMULÁRIO --- */
+.formulario {
+    display: flex;
+    flex-direction: column;        /* Coloca um campo embaixo do outro */
+    gap: 15px;                     /* Espaço entre cada conjunto de label/input */
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;        /* Label em cima, Input embaixo */
+    text-align: left;              /* Alinha os textos (Nome, E-mail) à esquerda */
+}
+
+.campo span {
+    font-size: 14px;
+    color: #444;                   /* Cinza escuro para facilitar a leitura */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 12px;                 /* Espaço interno para o texto não ficar colado na borda */
+    border: 1px solid #ccc;        /* Borda cinza clara */
+    border-radius: 8px;            /* Arredonda as bordas dos inputs */
+    outline: none;                 /* Remove o contorno padrão do navegador ao clicar */
+    transition: 0.3s;              /* Suaviza a mudança da borda no clique */
+}
+
+.campo input:focus {
+    border-color: #00d2ff;         /* Borda muda para azul claro ao clicar para digitar */
+}
+
+/* --- BOTÃO DE CADASTRAR/ENTRAR --- */
+.botao {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #E4005A;     /* Cor de destaque */
+    color: white;
+    border: none;                  /* Remove bordas do botão */
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;               /* Muda o mouse para a "mãozinha" */
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #b30046;     /* Escurece um pouco a cor ao passar o mouse */
+    transform: scale(1.02);        /* Efeito de aumento sutil no botão */
+}
+
+/* --- RODAPÉ (FOOTER) --- */
+.footer {
+    background-color: #212427;      /* Fundo escuro para contraste final */
+    color: white; padding: 30px;
+    text-align: center;
+}

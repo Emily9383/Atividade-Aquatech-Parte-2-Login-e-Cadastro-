@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.login{
+    display: flex;
+    justify-content: center; /* Centraliza a calculadora na horizontal */
+    align-items: center;     /* Centraliza a calculadora na vertical */
+    min-height: 110vh;       /* Define uma altura mínima para permitir rolagem e centralização */
+    
+    background-size: cover;     /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Garante que o centro da imagem esteja sempre visível */
+}
+
+.container {
+    width: 420px; /* Largura fixa da calculadora */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2); /* Borda fina e semi-transparente */
+    border-radius: 10px; /* Arredonda os cantos da caixa principal */
+    color: white; /* Cor padrão do texto dentro da caixa */
+    padding: 30px 40px; /* Espaçamento interno para os elementos não encostarem na borda */
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2); /* Sombra sólida para efeito 3D de desenho animado */
+    backdrop-filter: blur(10px); /* Cria o efeito de desfoque no fundo (vidro fosco) */
+}
